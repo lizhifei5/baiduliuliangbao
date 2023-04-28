@@ -1,0 +1,31 @@
+directories:
+  output: electron_output
+  buildResources: build
+productName: 百度流量宝
+appId: sol-baidu
+copyright: xi
+nsis:
+  shortcutName: 百度流量宝
+  oneClick: false
+  allowElevation: true
+  allowToChangeInstallationDirectory: true
+  installerIcon: ./build/icons/logo.ico
+  uninstallerIcon: ./build/icons/uninstall.ico
+  installerHeaderIcon: ./build/icons/logo.ico
+  createDesktopShortcut: true
+  createStartMenuShortcut: true
+  runAfterFinish: false
+win:
+  icon: build/icons/logo.ico
+  target:
+    - target: nsis
+      arch:
+        - x64
+publish:
+  provider: github
+  owner: lizhifei5
+  repo: baiduliuliangbao
+  token: <stripped sensitive data>
+  releaseType: release
+files: []
+electronVersion: 24.1.2
